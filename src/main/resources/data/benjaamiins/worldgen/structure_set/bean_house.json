@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "benjaamiins:bean_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 8234847,
+    "spacing": 48,
+    "separation": 16
+  }
+}

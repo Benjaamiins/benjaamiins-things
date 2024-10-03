@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "bean",
+  "ingredient": {
+    "item": "benjaamiins:uncut_benjaminium_shard"
+  },
+  "result": {
+    "id": "benjaamiins:benjaminium_shard"
+  }
+}

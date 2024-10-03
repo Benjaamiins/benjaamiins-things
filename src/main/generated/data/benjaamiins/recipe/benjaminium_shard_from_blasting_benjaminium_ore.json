@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "bean",
+  "ingredient": {
+    "item": "benjaamiins:benjaminium_ore"
+  },
+  "result": {
+    "id": "benjaamiins:benjaminium_shard"
+  }
+}

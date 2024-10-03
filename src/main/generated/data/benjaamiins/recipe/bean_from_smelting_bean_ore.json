@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "bean",
+  "ingredient": {
+    "item": "benjaamiins:bean_ore"
+  },
+  "result": {
+    "id": "benjaamiins:bean"
+  }
+}

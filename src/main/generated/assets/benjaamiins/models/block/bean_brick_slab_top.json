@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "benjaamiins:block/bean_bricks",
+    "side": "benjaamiins:block/bean_bricks",
+    "top": "benjaamiins:block/bean_bricks"
+  }
+}

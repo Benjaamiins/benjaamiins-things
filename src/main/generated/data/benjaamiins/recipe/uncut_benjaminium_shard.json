@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "benjaamiins:uncut_benjaminium_shard_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "benjaamiins:uncut_benjaminium_shard"
+  }
+}

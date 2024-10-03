@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "benjaamiins:block/bean_slab"
+    },
+    "type=double": {
+      "model": "benjaamiins:block/bean_block"
+    },
+    "type=top": {
+      "model": "benjaamiins:block/bean_slab_top"
+    }
+  }
+}

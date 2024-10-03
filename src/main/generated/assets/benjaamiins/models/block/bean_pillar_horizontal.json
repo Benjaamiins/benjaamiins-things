@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "benjaamiins:block/bean_pillar_top",
+    "side": "benjaamiins:block/bean_pillar"
+  }
+}
