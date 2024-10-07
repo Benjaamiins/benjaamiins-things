@@ -43,18 +43,28 @@ public class BeanScreen extends HandledScreen<BeanstoneMonolithScreenHandler> {
         switch (currentPage) {
             case 1:
                 context.drawTexture(Identifier.of(Benjaamiins.MOD_ID, "textures/gui/slides/slide1.png"), (width / 2) - (imgWidth / 2), (height / 2 - (bgHeight / 2)) + 10, 0, 0, imgWidth, imgHeight, imgWidth, imgHeight);
+                context.drawCenteredTextWithShadow(textRenderer, "Once there was Eiribeani, the omnipotent", (width / 2), (height / 2) - 70, 14211288);
+                context.drawCenteredTextWithShadow(textRenderer, "essence who flowed through all creation", (width / 2), (height / 2) - 60, 14211288);
                 break;
             case 2:
                 context.drawTexture(Identifier.of(Benjaamiins.MOD_ID, "textures/gui/slides/slide2.png"), (width / 2) - (imgWidth / 2), (height / 2 - (bgHeight / 2)) + 10, 0, 0, imgWidth, imgHeight, imgWidth, imgHeight);
+                context.drawCenteredTextWithShadow(textRenderer, "The Ieróbeanus began to harness", (width / 2), (height / 2) - 70, 14211288);
+                context.drawCenteredTextWithShadow(textRenderer, "the ultimate power of the bean", (width / 2), (height / 2) - 60, 14211288);
                 break;
             case 3:
                 context.drawTexture(Identifier.of(Benjaamiins.MOD_ID, "textures/gui/slides/slide3.png"), (width / 2) - (imgWidth / 2), (height / 2 - (bgHeight / 2)) + 10, 0, 0, imgWidth, imgHeight, imgWidth, imgHeight);
+                context.drawCenteredTextWithShadow(textRenderer, "The bean towers grew to reach the heavens", (width / 2), (height / 2) - 70, 14211288);
+                context.drawCenteredTextWithShadow(textRenderer, "and their power became unmatched and mighty", (width / 2), (height / 2) - 60, 14211288);
                 break;
             case 4:
                 context.drawTexture(Identifier.of(Benjaamiins.MOD_ID, "textures/gui/slides/slide4.png"), (width / 2) - (imgWidth / 2), (height / 2 - (bgHeight / 2)) + 10, 0, 0, imgWidth, imgHeight, imgWidth, imgHeight);
+                context.drawCenteredTextWithShadow(textRenderer, "But from within, a dark energy crept throughout", (width / 2), (height / 2) - 70, 14211288);
+                context.drawCenteredTextWithShadow(textRenderer, "the city, the Ieróbeanus spiraled into ruin", (width / 2), (height / 2) - 60, 14211288);
                 break;
             case 5:
                 context.drawTexture(Identifier.of(Benjaamiins.MOD_ID, "textures/gui/slides/slide5.png"), (width / 2) - (imgWidth / 2), (height / 2 - (bgHeight / 2)) + 10, 0, 0, imgWidth, imgHeight, imgWidth, imgHeight);
+                context.drawCenteredTextWithShadow(textRenderer, "Now all that remains are desolate bean", (width / 2), (height / 2) - 70, 14211288);
+                context.drawCenteredTextWithShadow(textRenderer, "outposts, echoing a once thriving empire", (width / 2), (height / 2) - 60, 14211288);
                 break;
         }
 
