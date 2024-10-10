@@ -21,7 +21,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3f, 5.0F).requiresTool().sounds(BlockSoundGroup.HONEY)), "bean_block", true);
     public static final Block BEAN_BRICKS = register(
             new Block(AbstractBlock.Settings.create().strength(3f, 5.0F).requiresTool().sounds(BlockSoundGroup.HONEY)), "bean_bricks", true);
-
+    public static final Block CRACKED_BEAN_BRICKS = register(
+            new Block(AbstractBlock.Settings.create().strength(3f, 5.0F).requiresTool().sounds(BlockSoundGroup.HONEY)), "cracked_bean_bricks", true);
 
     public static final Block BENJAMINIUM_ORE = register(
             new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "benjaminium_ore", true);
@@ -46,10 +47,11 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK)), "bean_brick_slab", true);
     public static final Block BEAN_PILLAR = register(
             new PillarBlock(AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK)), "bean_pillar", true);
+    public static final Block CRACKED_BEAN_PILLAR = register(
+            new PillarBlock(AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK)), "cracked_bean_pillar", true);
 
     public static final Block BEAN_PEDESTAL = register(
             new BeanPedestalBlock(AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK).nonOpaque()), "bean_pedestal", true);
-
     public static final Block BEANSTONE_MONOLITH = register(
             new BeanstoneMonolithBlock(AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK).nonOpaque()), "beanstone_monolith", true);
 

@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "benjaamiins:bean_house",
+      "structure": "benjaamiins:bean_center",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "salt": 8234847,
+    "salt": 43578923,
     "spacing": 48,
-    "separation": 16
+    "separation": 42
   }
 }

@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool beanPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEAN_BLOCK);
         BlockStateModelGenerator.BlockTexturePool beanBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEAN_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_BEAN_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BEAN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEAN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BENJAMINIUM_ORE);
@@ -31,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.BEAN_PILLAR).log(ModBlocks.BEAN_PILLAR);
+        blockStateModelGenerator.registerLog(ModBlocks.CRACKED_BEAN_PILLAR).log(ModBlocks.CRACKED_BEAN_PILLAR);
 
         beanPool.stairs(ModBlocks.BEAN_STAIRS);
         beanPool.slab(ModBlocks.BEAN_SLAB);

@@ -36,6 +36,11 @@ public class BeanstoneMonolithBlock extends BlockWithEntity {
     }
 
     @Override
+    protected VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
+        return SHAPE;
+    }
+
+    @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return createCodec(BeanstoneMonolithBlock::new);
     }

@@ -1,0 +1,69 @@
+{
+  "name": "benjaamiins:bean_city/paths",
+  "fallback": "benjaamiins:bean_city/terminators",
+  "elements": [
+    {
+      "weight": 8,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/path1",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/path2",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/path3",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/corner_1",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/corner_2",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/crossroad_1",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "benjaamiins:bean_city/paths/crossroad_2",
+        "processors": "benjaamiins:bean_crackify_50",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

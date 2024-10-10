@@ -31,9 +31,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BEAN_STAIRS);
         addDrop(ModBlocks.BEAN_SLAB);
         addDrop(ModBlocks.BEAN_BRICKS);
+        addDrop(ModBlocks.CRACKED_BEAN_BRICKS);
         addDrop(ModBlocks.BEAN_BRICK_STAIRS);
         addDrop(ModBlocks.BEAN_BRICK_SLAB);
         addDrop(ModBlocks.BEAN_PILLAR);
+        addDrop(ModBlocks.CRACKED_BEAN_PILLAR);
         addDrop(ModBlocks.BENJAMINIUM_SHARD_BLOCK);
         addDrop(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
 

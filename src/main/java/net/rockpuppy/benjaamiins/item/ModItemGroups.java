@@ -37,9 +37,11 @@ public class ModItemGroups {
                     entries.add(ModBlocks.BEAN_STAIRS);
                     entries.add(ModBlocks.BEAN_SLAB);
                     entries.add(ModBlocks.BEAN_BRICKS);
+                    entries.add(ModBlocks.CRACKED_BEAN_BRICKS);
                     entries.add(ModBlocks.BEAN_BRICK_STAIRS);
                     entries.add(ModBlocks.BEAN_BRICK_SLAB);
                     entries.add(ModBlocks.BEAN_PILLAR);
+                    entries.add(ModBlocks.CRACKED_BEAN_PILLAR);
                     entries.add(ModBlocks.BEAN_PEDESTAL);
 
                     entries.add(ModBlocks.BEANSTONE_MONOLITH);

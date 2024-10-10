@@ -1,0 +1,35 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "block": "benjaamiins:bean_bricks",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.5
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "benjaamiins:cracked_bean_bricks"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "benjaamiins:bean_pillar",
+            "predicate_type": "minecraft:random_block_match",
+            "probability": 0.5
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "benjaamiins:cracked_bean_pillar"
+          }
+        }
+      ]
+    }
+  ]
+}

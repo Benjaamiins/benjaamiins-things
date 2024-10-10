@@ -1,0 +1,60 @@
+{
+  "name": "benjaamiins:bean_city/buildings",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_1",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_2",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_3",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_4",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_5",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "benjaamiins:bean_city/buildings/building_6",
+        "processors": "benjaamiins:bean_crackify_25",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
