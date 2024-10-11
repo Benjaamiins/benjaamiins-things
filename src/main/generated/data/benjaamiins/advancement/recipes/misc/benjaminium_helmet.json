@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_benjaminium_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "benjaamiins:benjaminium_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "benjaamiins:benjaminium_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_benjaminium_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "benjaamiins:benjaminium_helmet"
+    ]
+  }
+}

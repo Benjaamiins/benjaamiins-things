@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "bean",
+  "ingredient": {
+    "item": "benjaamiins:bean_pillar"
+  },
+  "result": {
+    "id": "benjaamiins:cracked_bean_pillar"
+  }
+}
