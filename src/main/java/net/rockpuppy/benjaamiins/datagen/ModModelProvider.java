@@ -46,6 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.BEAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VALIDUS_BEANORUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BEAN_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BEAN_SWORD, Models.HANDHELD);

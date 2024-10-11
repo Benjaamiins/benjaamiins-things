@@ -70,6 +70,7 @@ public class ModItems {
     public static final Item BEAN_GOD_SPAWN_EGG = register("bean_god_spawn_egg", new SpawnEggItem(ModEntities.BEAN_GOD, 0xff7400, 0xff9c00, new Item.Settings()));
     public static final Item BENJAMINIUM_SHARD = register("benjaminium_shard", new Item(new Item.Settings()));
     public static final Item UNCUT_BENJAMINIUM_SHARD = register("uncut_benjaminium_shard", new Item(new Item.Settings()));
+    public static final Item VALIDUS_BEANORUM = register("validus_beanorum", new Item(new Item.Settings()));
 
     public static Item register(String id, Item item) {
         Identifier itemID = Identifier.of(Benjaamiins.MOD_ID, id);

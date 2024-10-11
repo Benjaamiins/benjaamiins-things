@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "benjaamiins:bean_colosseum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 8732222316,
+    "spacing": 48,
+    "separation": 42
+  }
+}

@@ -49,7 +49,20 @@ public class Benjaamiins implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_MASTER, BeanMasterEntity.createBeanMasterAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_GOD, BeanGodEntity.createBeanGodAttributes());
-
-
 	}
+
+	/*
+	Crafting Recipes:
+
+	Elite Bean Armour
+
+	Bean Pedestal
+	Bean Monolith
+
+	Textures:
+
+	Retexture Bean
+
+	Block/Mob Drops:
+	*/
 }

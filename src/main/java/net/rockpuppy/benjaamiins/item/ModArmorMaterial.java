@@ -10,6 +10,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.rockpuppy.benjaamiins.Benjaamiins;
+import net.rockpuppy.benjaamiins.block.ModBlocks;
 
 import java.util.List;
 import java.util.Map;
@@ -48,7 +49,7 @@ public class ModArmorMaterial {
             ),
             20,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.ofItems(ModItems.BENJAMINIUM_SHARD),
+            () -> Ingredient.ofItems(ModBlocks.BEAN_BLOCK),
             4.0f,
             0.2f,
             false);

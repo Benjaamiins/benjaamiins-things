@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
+    "#": {
       "item": "benjaamiins:bean"
     },
-    "S": {
+    "*": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    " BB",
-    " SB",
-    " S "
+    " ##",
+    " *#",
+    " * "
   ],
   "result": {
     "count": 1,

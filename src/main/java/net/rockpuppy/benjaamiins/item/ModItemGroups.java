@@ -65,6 +65,8 @@ public class ModItemGroups {
                     entries.add(ModItems.ELITE_BEAN_CHESTPLATE);
                     entries.add(ModItems.ELITE_BEAN_LEGGINGS);
                     entries.add(ModItems.ELITE_BEAN_BOOTS);
+
+                    entries.add(ModItems.VALIDUS_BEANORUM);
                     }).build());
 
 

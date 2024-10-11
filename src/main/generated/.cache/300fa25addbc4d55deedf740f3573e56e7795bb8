@@ -1,4 +1,4 @@
-// 1.21	2024-10-10T20:06:52.0633077	benjaamiins/Model Definitions
+// 1.21	2024-10-11T18:44:05.7053079	benjaamiins/Model Definitions
 46c80d6d8170df8d52ccc1593a5e889eef4f92a5 assets\benjaamiins\models\block\benjaminium_shard_block.json
 722b5fbfd749f2801740c8ff5ec92a18d19817d9 assets\benjaamiins\models\item\benjaminium_shard_block.json
 42d13e94418dfbea52a4e019d2ef65e2f9cf982c assets\benjaamiins\models\item\bean_sword.json
@@ -6,8 +6,8 @@
 ae19075e3d95766434d58a2e00fb66af4a2d39d3 assets\benjaamiins\models\item\nether_benjaminium_ore.json
 c3a0b14030baacfc868e25a351f25f0e56b9e509 assets\benjaamiins\models\item\bean_hoe.json
 c6a6ca9d9ba5c7eea79757f273ead996f23cc069 assets\benjaamiins\models\item\bean_pedestal.json
-c4b96a2736eb52ae5d210ae69eda54d87655d13d assets\benjaamiins\blockstates\bean_pedestal.json
 b456d4273e3a0ba1cdeb1e6746093b5bb69a6ead assets\benjaamiins\blockstates\bean_brick_slab.json
+c4b96a2736eb52ae5d210ae69eda54d87655d13d assets\benjaamiins\blockstates\bean_pedestal.json
 f5156dc068258acf69a4f3b7d7f184be06b76ecb assets\benjaamiins\models\item\end_stone_benjaminium_ore.json
 4161ecea9fd7a745816fbf978d07f2eed39526a9 assets\benjaamiins\models\block\bean_slab.json
 8a6c88dbd4a60f6013fc0649a82e6364c275d0ef assets\benjaamiins\models\block\bean_slab_top.json
@@ -15,8 +15,8 @@ f5156dc068258acf69a4f3b7d7f184be06b76ecb assets\benjaamiins\models\item\end_ston
 2920a293d063ccd53f95510d1ecce0371c38576c assets\benjaamiins\blockstates\bean_pillar.json
 6953bb4fb46cd4ae60495d29d3787ca1bbc094f6 assets\benjaamiins\models\item\bean_leggings.json
 f849d39406ba87d37d62bfaf5e1b809b5f69ecee assets\benjaamiins\blockstates\deepslate_bean_ore.json
-7695ba5c206588411e96ca814072961fff9d400a assets\benjaamiins\models\item\bean_helmet.json
 a4ff4494535b46b883e1c4fbe6b379e25ad01dd6 assets\benjaamiins\models\item\cracked_bean_pillar.json
+7695ba5c206588411e96ca814072961fff9d400a assets\benjaamiins\models\item\bean_helmet.json
 1b26aeedf368d9246e9777fdb542301157f10640 assets\benjaamiins\models\block\benjaminium_ore.json
 a156bd794a19758f8eca4601db919e485595bd2f assets\benjaamiins\models\item\benjaminium_shard.json
 ef05c10e5935944280f5b081ec3723342d18d37f assets\benjaamiins\models\item\bean_chestplate.json
@@ -26,6 +26,7 @@ d39a7f2b62641de6a773a59f2a7901475358c636 assets\benjaamiins\models\item\uncut_be
 820d02436979022acbadca2a725cde0aff39ef49 assets\benjaamiins\blockstates\nether_benjaminium_ore.json
 e92d0163a28dc872cd69f4b35f95e1f51edb3268 assets\benjaamiins\models\item\elite_bean_leggings.json
 cfa39281a4c9c5aa56a086531c1fdbe03cddadfe assets\benjaamiins\models\block\uncut_benjaminium_shard_block.json
+cf62c3fcfa5924b5970868ddc67cff300e670712 assets\benjaamiins\models\item\validus_beanorum.json
 d690dc73432efbea34d4dae9cd16392ee73f3fa9 assets\benjaamiins\models\block\bean_pillar_horizontal.json
 3c3d124ef230d7ee229e658132d8f028752b23d6 assets\benjaamiins\models\item\bean_ore.json
 7f31e5f54188a0a710cd5e6e6207e7582aaecd7e assets\benjaamiins\blockstates\deepslate_benjaminium_ore.json
