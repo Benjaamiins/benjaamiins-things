@@ -27,22 +27,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CRACKED_BEAN_PILLAR)
                 .add(ModBlocks.DEEPSLATE_BEAN_ORE)
                 .add(ModBlocks.BEAN_ORE)
-                .add(ModBlocks.BENJAMINIUM_SHARD_BLOCK)
-                .add(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK)
-                .add(ModBlocks.BENJAMINIUM_ORE)
-                .add(ModBlocks.DEEPSLATE_BENJAMINIUM_ORE)
-                .add(ModBlocks.NETHER_BENJAMINIUM_ORE)
-                .add(ModBlocks.END_STONE_BENJAMINIUM_ORE)
+                .add(ModBlocks.ZEPHORINE_SHARD_BLOCK)
+                .add(ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK)
+                .add(ModBlocks.ZEPHORINE_ORE)
+                .add(ModBlocks.DEEPSLATE_ZEPHORINE_ORE)
+                .add(ModBlocks.NETHER_ZEPHORINE_ORE)
+                .add(ModBlocks.END_STONE_ZEPHORINE_ORE)
                 .add(ModBlocks.BEAN_PEDESTAL)
                 .add(ModBlocks.BEANSTONE_MONOLITH);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BEAN_ORE)
                 .add(ModBlocks.DEEPSLATE_BEAN_ORE)
-                .add(ModBlocks.BENJAMINIUM_ORE)
+                .add(ModBlocks.ZEPHORINE_ORE)
                 .add(ModBlocks.DEEPSLATE_BEAN_ORE)
-                .add(ModBlocks.NETHER_BENJAMINIUM_ORE)
-                .add(ModBlocks.END_STONE_BENJAMINIUM_ORE)
+                .add(ModBlocks.NETHER_ZEPHORINE_ORE)
+                .add(ModBlocks.END_STONE_ZEPHORINE_ORE)
                 .add(ModBlocks.BEANSTONE_MONOLITH);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -53,8 +53,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BEAN_BRICK_STAIRS)
                 .add(ModBlocks.BEAN_BRICK_SLAB)
                 .add(ModBlocks.BEAN_PILLAR)
-                .add(ModBlocks.BENJAMINIUM_SHARD_BLOCK)
-                .add(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK)
+                .add(ModBlocks.ZEPHORINE_SHARD_BLOCK)
+                .add(ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK)
                 .add(ModBlocks.BEAN_PEDESTAL);
     }
 }

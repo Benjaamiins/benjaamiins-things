@@ -13,7 +13,7 @@ import net.rockpuppy.benjaamiins.block.ModBlocks;
 import net.rockpuppy.benjaamiins.block.entity.BeanPedestalBlockEntity;
 import net.rockpuppy.benjaamiins.block.entity.ModBlockEntities;
 import net.rockpuppy.benjaamiins.entity.ModEntities;
-import net.rockpuppy.benjaamiins.entity.custom.BeanGodEntity;
+import net.rockpuppy.benjaamiins.entity.custom.BeanLordEntity;
 import net.rockpuppy.benjaamiins.entity.custom.BeanMasterEntity;
 import net.rockpuppy.benjaamiins.item.ModArmorMaterial;
 import net.rockpuppy.benjaamiins.item.ModItemGroups;
@@ -22,7 +22,6 @@ import net.rockpuppy.benjaamiins.screens.BeanstoneMonolithScreenHandler;
 import net.rockpuppy.benjaamiins.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import software.bernie.geckolib.GeckoLib;
 
 public class Benjaamiins implements ModInitializer {
 	public static final String MOD_ID = "benjaamiins";
@@ -48,21 +47,6 @@ public class Benjaamiins implements ModInitializer {
 		ItemStorage.SIDED.registerForBlockEntity(BeanPedestalBlockEntity::getInventoryProvider, ModBlockEntities.BEAN_PEDESTAL);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_MASTER, BeanMasterEntity.createBeanMasterAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_GOD, BeanGodEntity.createBeanGodAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_LORD, BeanLordEntity.createBeanLordAttributes());
 	}
-
-	/*
-	Crafting Recipes:
-
-	Elite Bean Armour
-
-	Bean Pedestal
-	Bean Monolith
-
-	Textures:
-
-	Retexture Bean
-
-	Block/Mob Drops:
-	*/
 }

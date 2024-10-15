@@ -6,21 +6,21 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.rockpuppy.benjaamiins.Benjaamiins;
-import net.rockpuppy.benjaamiins.entity.custom.BeanGodEntity;
+import net.rockpuppy.benjaamiins.entity.custom.BeanLordEntity;
 
-public class BeanGodRenderer extends MobEntityRenderer<BeanGodEntity, BeanGodModel<BeanGodEntity>> {
+public class BeanLordRenderer extends MobEntityRenderer<BeanLordEntity, BeanLordModel<BeanLordEntity>> {
 
-    public BeanGodRenderer(EntityRendererFactory.Context context) {
-        super(context, new BeanGodModel<>(context.getPart(ModModelLayers.BEAN_GOD)), 0.6f);
+    public BeanLordRenderer(EntityRendererFactory.Context context) {
+        super(context, new BeanLordModel<>(context.getPart(ModModelLayers.BEAN_LORD)), 0.6f);
     }
 
     @Override
-    public Identifier getTexture(BeanGodEntity entity) {
-        return Identifier.of(Benjaamiins.MOD_ID, "textures/entity/bean_god.png");
+    public Identifier getTexture(BeanLordEntity entity) {
+        return Identifier.of(Benjaamiins.MOD_ID, "textures/entity/bean_lord.png");
     }
 
     @Override
-    public void render(BeanGodEntity livingEntity, float f, float g, MatrixStack matrixStack,
+    public void render(BeanLordEntity livingEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
         super.render(livingEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }

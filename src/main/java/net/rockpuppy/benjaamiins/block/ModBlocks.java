@@ -24,18 +24,18 @@ public class ModBlocks {
     public static final Block CRACKED_BEAN_BRICKS = register(
             new Block(AbstractBlock.Settings.create().strength(3f, 5.0F).requiresTool().sounds(BlockSoundGroup.HONEY)), "cracked_bean_bricks", true);
 
-    public static final Block BENJAMINIUM_ORE = register(
-            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "benjaminium_ore", true);
-    public static final Block DEEPSLATE_BENJAMINIUM_ORE = register(
-            new Block(AbstractBlock.Settings.create().strength(7.5f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "deepslate_benjaminium_ore", true);
-    public static final Block NETHER_BENJAMINIUM_ORE = register(
-            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "nether_benjaminium_ore", true);
-    public static final Block END_STONE_BENJAMINIUM_ORE = register(
-            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "end_stone_benjaminium_ore", true);
-    public static final Block BENJAMINIUM_SHARD_BLOCK = register(
-            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "benjaminium_shard_block", true);
-    public static final Block UNCUT_BENJAMINIUM_SHARD_BLOCK = register(
-            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "uncut_benjaminium_shard_block", true);
+    public static final Block ZEPHORINE_ORE = register(
+            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "zephorine_ore", true);
+    public static final Block DEEPSLATE_ZEPHORINE_ORE = register(
+            new Block(AbstractBlock.Settings.create().strength(7.5f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "deepslate_zephorine_ore", true);
+    public static final Block NETHER_ZEPHORINE_ORE = register(
+            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "nether_zephorine_ore", true);
+    public static final Block END_STONE_ZEPHORINE_ORE = register(
+            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "end_stone_zephorine_ore", true);
+    public static final Block ZEPHORINE_SHARD_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "zephorine_shard_block", true);
+    public static final Block UNCUT_ZEPHORINE_SHARD_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().strength(6.0f, 5.0F).requiresTool().sounds(BlockSoundGroup.STONE)), "uncut_zephorine_shard_block", true);
 
     public static final Block BEAN_STAIRS = register(
             new StairsBlock(ModBlocks.BEAN_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(ModBlocks.BEAN_BLOCK)), "bean_stairs", true);

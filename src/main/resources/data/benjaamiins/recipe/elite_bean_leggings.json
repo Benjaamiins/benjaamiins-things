@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "benjaamiins:validus_beanorum"
+  },
+  "base": {
+    "item": "benjaamiins:bean_leggings"
+  },
+  "addition": {
+    "item": "benjaamiins:bean_block"
+  },
+  "result": {
+    "id": "benjaamiins:elite_bean_leggings"
+  }
+}

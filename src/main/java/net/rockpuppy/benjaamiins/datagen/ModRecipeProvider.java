@@ -4,7 +4,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -18,8 +20,8 @@ import java.util.concurrent.CompletableFuture;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> BEAN_SMELTABLES = List.of(
             ModBlocks.BEAN_ORE, ModBlocks.DEEPSLATE_BEAN_ORE);
-    public static final List<ItemConvertible> BENJAMINIUM_SMELTABLES = List.of(
-            ModBlocks.BENJAMINIUM_ORE, ModBlocks.DEEPSLATE_BEAN_ORE, ModBlocks.NETHER_BENJAMINIUM_ORE, ModBlocks.END_STONE_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD);
+    public static final List<ItemConvertible> ZEPHORINE_SMELTABLES = List.of(
+            ModBlocks.ZEPHORINE_ORE, ModBlocks.DEEPSLATE_ZEPHORINE_ORE, ModBlocks.NETHER_ZEPHORINE_ORE, ModBlocks.END_STONE_ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD);
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -29,16 +31,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
         offerBlasting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
-        offerSmelting(exporter, BENJAMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BENJAMINIUM_SHARD, 1.0F, 200, "bean");
-        offerBlasting(exporter, BENJAMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BENJAMINIUM_SHARD, 1.0F, 200, "bean");
+        offerSmelting(exporter, ZEPHORINE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHORINE_SHARD, 1.0F, 200, "bean");
+        offerBlasting(exporter, ZEPHORINE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHORINE_SHARD, 1.0F, 200, "bean");
         offerSmelting(exporter, List.of(ModBlocks.BEAN_BRICKS), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_BRICKS, 1.0F, 200, "bean");
         offerBlasting(exporter, List.of(ModBlocks.BEAN_BRICKS), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_BRICKS, 1.0F, 200, "bean");
         offerSmelting(exporter, List.of(ModBlocks.BEAN_PILLAR), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_PILLAR, 1.0F, 200, "bean");
         offerBlasting(exporter, List.of(ModBlocks.BEAN_PILLAR), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_PILLAR, 1.0F, 200, "bean");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BEAN, RecipeCategory.DECORATIONS, ModBlocks.BEAN_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BENJAMINIUM_SHARD, RecipeCategory.DECORATIONS, ModBlocks.BENJAMINIUM_SHARD_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.UNCUT_BENJAMINIUM_SHARD, RecipeCategory.DECORATIONS, ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ZEPHORINE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.ZEPHORINE_SHARD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.UNCUT_ZEPHORINE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK);
 
         createStairsRecipe(ModBlocks.BEAN_STAIRS, Ingredient.ofItems(ModBlocks.BEAN_BLOCK))
                 .criterion(hasItem(ModBlocks.BEAN_BLOCK), conditionsFromItem(ModBlocks.BEAN_BLOCK))
@@ -57,10 +59,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerChestplateRecipe(exporter, ModItems.BEAN_CHESTPLATE, ModItems.BEAN);
         offerLeggingsRecipe(exporter, ModItems.BEAN_LEGGINGS, ModItems.BEAN);
         offerBootsRecipe(exporter, ModItems.BEAN_BOOTS, ModItems.BEAN);
-        offerHelmetRecipe(exporter, ModItems.BENJAMINIUM_HELMET, ModItems.BENJAMINIUM_SHARD);
-        offerChestplateRecipe(exporter, ModItems.BENJAMINIUM_CHESTPLATE, ModItems.BENJAMINIUM_SHARD);
-        offerLeggingsRecipe(exporter, ModItems.BENJAMINIUM_LEGGINGS, ModItems.BENJAMINIUM_SHARD);
-        offerBootsRecipe(exporter, ModItems.BENJAMINIUM_BOOTS, ModItems.BENJAMINIUM_SHARD);
 
         offerPickaxeRecipe(exporter, ModItems.BEAN_PICKAXE, ModItems.BEAN);
         offerSwordRecipe(exporter, ModItems.BEAN_SWORD, ModItems.BEAN);

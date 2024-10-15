@@ -6,13 +6,13 @@ import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import net.rockpuppy.benjaamiins.animation.ModAnimations;
-import net.rockpuppy.benjaamiins.entity.custom.BeanGodEntity;
+import net.rockpuppy.benjaamiins.entity.custom.BeanLordEntity;
 
-public class BeanGodModel<T extends BeanGodEntity> extends SinglePartEntityModel<T> {
+public class BeanLordModel<T extends BeanLordEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart bean_god;
 	private final ModelPart head;
 
-	public BeanGodModel(ModelPart root) {
+	public BeanLordModel(ModelPart root) {
 		this.bean_god = root.getChild("bean_god");
 		this.head = bean_god.getChild("body").getChild("head");
 	}
@@ -218,7 +218,7 @@ public class BeanGodModel<T extends BeanGodEntity> extends SinglePartEntityModel
 	}
 
 	@Override
-	public void setAngles(BeanGodEntity entity , float limbSwing, float limbSwingAmount, float animationProgress, float headYaw, float headPitch) {
+	public void setAngles(BeanLordEntity entity , float limbSwing, float limbSwingAmount, float animationProgress, float headYaw, float headPitch) {
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 		this.setHeadAngles(headYaw, headPitch);
 

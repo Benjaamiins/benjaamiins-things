@@ -24,9 +24,5 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.BEAN_CHESTPLATE);
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.BEAN_LEGGINGS);
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.BEAN_BOOTS);
-        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR).add(ModItems.BENJAMINIUM_HELMET);
-        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.BENJAMINIUM_CHESTPLATE);
-        getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.BENJAMINIUM_LEGGINGS);
-        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.BENJAMINIUM_BOOTS);
     }
 }

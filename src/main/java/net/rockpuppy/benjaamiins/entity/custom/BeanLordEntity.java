@@ -10,30 +10,20 @@ import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.HostileEntity;
-import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.ChickenEntity;
-import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
-import net.rockpuppy.benjaamiins.block.ModBlocks;
-import net.rockpuppy.benjaamiins.entity.ModEntities;
-import net.rockpuppy.benjaamiins.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
-public class BeanGodEntity extends HostileEntity {
+public class BeanLordEntity extends HostileEntity {
 
     private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.YELLOW, BossBar.Style.NOTCHED_6).setDarkenSky(true);
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-    public BeanGodEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public BeanLordEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -75,9 +65,9 @@ public class BeanGodEntity extends HostileEntity {
 
     }
 
-    public static DefaultAttributeContainer.Builder createBeanGodAttributes() {
+    public static DefaultAttributeContainer.Builder createBeanLordAttributes() {
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 5000)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 2000)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2F)
                 .add(EntityAttributes.GENERIC_ARMOR, 35.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 35)

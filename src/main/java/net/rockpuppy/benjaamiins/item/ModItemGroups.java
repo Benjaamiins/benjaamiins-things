@@ -24,7 +24,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BEAN_SHOVEL);
                     entries.add(ModItems.BEAN_HOE);
                     entries.add(ModItems.BEAN_MASTER_SPAWN_EGG);
-                    entries.add(ModItems.BEAN_GOD_SPAWN_EGG);
+                    entries.add(ModItems.BEAN_LORD_SPAWN_EGG);
 
                     entries.add(ModItems.BEAN_HELMET);
                     entries.add(ModItems.BEAN_CHESTPLATE);
@@ -46,20 +46,15 @@ public class ModItemGroups {
 
                     entries.add(ModBlocks.BEANSTONE_MONOLITH);
 
-                    entries.add(ModItems.BENJAMINIUM_SHARD);
-                    entries.add(ModItems.UNCUT_BENJAMINIUM_SHARD);
+                    entries.add(ModItems.ZEPHORINE_SHARD);
+                    entries.add(ModItems.UNCUT_ZEPHORINE_SHARD);
 
-                    entries.add(ModBlocks.BENJAMINIUM_ORE);
-                    entries.add(ModBlocks.DEEPSLATE_BENJAMINIUM_ORE);
-                    entries.add(ModBlocks.NETHER_BENJAMINIUM_ORE);
-                    entries.add(ModBlocks.END_STONE_BENJAMINIUM_ORE);
-                    entries.add(ModBlocks.BENJAMINIUM_SHARD_BLOCK);
-                    entries.add(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
-
-                    entries.add(ModItems.BENJAMINIUM_HELMET);
-                    entries.add(ModItems.BENJAMINIUM_CHESTPLATE);
-                    entries.add(ModItems.BENJAMINIUM_LEGGINGS);
-                    entries.add(ModItems.BENJAMINIUM_BOOTS);
+                    entries.add(ModBlocks.ZEPHORINE_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_ZEPHORINE_ORE);
+                    entries.add(ModBlocks.NETHER_ZEPHORINE_ORE);
+                    entries.add(ModBlocks.END_STONE_ZEPHORINE_ORE);
+                    entries.add(ModBlocks.ZEPHORINE_SHARD_BLOCK);
+                    entries.add(ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK);
 
                     entries.add(ModItems.ELITE_BEAN_HELMET);
                     entries.add(ModItems.ELITE_BEAN_CHESTPLATE);

@@ -24,12 +24,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_BEAN_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BEAN_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEAN_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BENJAMINIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BENJAMINIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_BENJAMINIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_BENJAMINIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BENJAMINIUM_SHARD_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZEPHORINE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ZEPHORINE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_ZEPHORINE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_ZEPHORINE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZEPHORINE_SHARD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.BEAN_PILLAR).log(ModBlocks.BEAN_PILLAR);
         blockStateModelGenerator.registerLog(ModBlocks.CRACKED_BEAN_PILLAR).log(ModBlocks.CRACKED_BEAN_PILLAR);
@@ -59,13 +59,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BEAN_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEAN_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BENJAMINIUM_SHARD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.UNCUT_BENJAMINIUM_SHARD, Models.GENERATED);
-
-        itemModelGenerator.register(ModItems.BENJAMINIUM_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZEPHORINE_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNCUT_ZEPHORINE_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ELITE_BEAN_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELITE_BEAN_CHESTPLATE, Models.GENERATED);
@@ -73,6 +68,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ELITE_BEAN_BOOTS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BEAN_MASTER_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-        itemModelGenerator.register(ModItems.BEAN_GOD_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.BEAN_LORD_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

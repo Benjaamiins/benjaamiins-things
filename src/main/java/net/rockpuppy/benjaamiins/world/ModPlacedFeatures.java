@@ -16,9 +16,9 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BEAN_ORE_PLACED_KEY = registerKey("bean_ore_placed");
-    public static final RegistryKey<PlacedFeature> BENJAMINIUM_ORE_PLACED_KEY = registerKey("benjaminium_ore_placed");
-    public static final RegistryKey<PlacedFeature> NETHER_BENJAMINIUM_ORE_PLACED_KEY = registerKey("nether_benjaminium_ore_placed");
-    public static final RegistryKey<PlacedFeature> END_BENJAMINIUM_ORE_PLACED_KEY = registerKey("end_benjaminium_ore_placed");
+    public static final RegistryKey<PlacedFeature> ZEPHORINE_ORE_PLACED_KEY = registerKey("zephorine_ore_placed");
+    public static final RegistryKey<PlacedFeature> NETHER_ZEPHORINE_ORE_PLACED_KEY = registerKey("nether_zephorine_ore_placed");
+    public static final RegistryKey<PlacedFeature> END_ZEPHORINE_ORE_PLACED_KEY = registerKey("end_zephorine_ore_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -26,13 +26,13 @@ public class ModPlacedFeatures {
         register(context, BEAN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BEAN_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6, // veins per chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(40))));
-        register(context, BENJAMINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BENJAMINIUM_ORE_KEY),
+        register(context, ZEPHORINE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ZEPHORINE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, // veins per chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(40))));
-        register(context, NETHER_BENJAMINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_BENJAMINIUM_ORE_KEY),
+        register(context, NETHER_ZEPHORINE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_ZEPHORINE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, // veins per chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(200))));
-        register(context, END_BENJAMINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_BENJAMINIUM_ORE_KEY),
+        register(context, END_ZEPHORINE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_ZEPHORINE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, // veins per chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }

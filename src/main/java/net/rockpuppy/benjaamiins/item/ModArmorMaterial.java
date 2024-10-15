@@ -18,28 +18,16 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterial {
     public static final RegistryEntry<ArmorMaterial> BEAN = registerMaterial("bean", Map.of(
-            ArmorItem.Type.HELMET, 5,
-            ArmorItem.Type.CHESTPLATE, 10,
-            ArmorItem.Type.LEGGINGS, 8,
-            ArmorItem.Type.BOOTS, 5
+            ArmorItem.Type.HELMET, 2,
+            ArmorItem.Type.CHESTPLATE, 6,
+            ArmorItem.Type.LEGGINGS, 5,
+            ArmorItem.Type.BOOTS, 2
     ),
     20,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             () -> Ingredient.ofItems(ModItems.BEAN),
-            4.0f,
-            0.2f,
-            false);
-    public static final RegistryEntry<ArmorMaterial> BENJAMINIUM = registerMaterial("benjaminium", Map.of(
-                    ArmorItem.Type.HELMET, 3,
-                    ArmorItem.Type.CHESTPLATE, 8,
-                    ArmorItem.Type.LEGGINGS, 6,
-                    ArmorItem.Type.BOOTS, 3
-            ),
-            20,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.ofItems(ModItems.BENJAMINIUM_SHARD),
-            3.0f,
-            0.1f,
+            0.0f,
+            -1.8f,
             false);
     public static final RegistryEntry<ArmorMaterial> ELITE_BEAN = registerMaterial("elite_bean", Map.of(
                     ArmorItem.Type.HELMET, 5,

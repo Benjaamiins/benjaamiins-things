@@ -1,4 +1,4 @@
-// 1.21	2024-10-11T18:44:05.7023047	benjaamiins/Tags for minecraft:block
-e781d0afe34755edd76c3452b15679f97cce0965 data\minecraft\tags\block\mineable\pickaxe.json
-05dbc0f1eb1d30719e8fa20321dc792e67ac1ec6 data\minecraft\tags\block\needs_diamond_tool.json
-5577fa95fb0844d7451a811734981eebe5094cf1 data\minecraft\tags\block\needs_iron_tool.json
+// 1.21	2024-10-15T18:27:13.057639	benjaamiins/Tags for minecraft:block
+0983d3908382e90b80884f5418bd12d75ea0bb5d data\minecraft\tags\block\mineable\pickaxe.json
+cd460ee2c5684f8dfa643e699ad4fb6f9554ed72 data\minecraft\tags\block\needs_diamond_tool.json
+3b1ac7d29abdf1a023f56517f32f0067336b0ad8 data\minecraft\tags\block\needs_iron_tool.json

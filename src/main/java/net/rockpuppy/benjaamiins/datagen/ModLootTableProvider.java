@@ -36,15 +36,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BEAN_BRICK_SLAB);
         addDrop(ModBlocks.BEAN_PILLAR);
         addDrop(ModBlocks.CRACKED_BEAN_PILLAR);
-        addDrop(ModBlocks.BENJAMINIUM_SHARD_BLOCK);
-        addDrop(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
+        addDrop(ModBlocks.ZEPHORINE_SHARD_BLOCK);
+        addDrop(ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK);
 
         addDrop(ModBlocks.BEAN_ORE, oreLikeDrops(ModBlocks.BEAN_ORE, ModItems.BEAN));
         addDrop(ModBlocks.DEEPSLATE_BEAN_ORE, oreLikeDrops(ModBlocks.DEEPSLATE_BEAN_ORE, ModItems.BEAN));
-        addDrop(ModBlocks.BENJAMINIUM_ORE, oreLikeDrops(ModBlocks.BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD));
-        addDrop(ModBlocks.DEEPSLATE_BENJAMINIUM_ORE, oreLikeDrops(ModBlocks.DEEPSLATE_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD));
-        addDrop(ModBlocks.NETHER_BENJAMINIUM_ORE, oreLikeDrops(ModBlocks.NETHER_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD));
-        addDrop(ModBlocks.END_STONE_BENJAMINIUM_ORE, oreLikeDrops(ModBlocks.END_STONE_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD));
+        addDrop(ModBlocks.ZEPHORINE_ORE, oreLikeDrops(ModBlocks.ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD));
+        addDrop(ModBlocks.DEEPSLATE_ZEPHORINE_ORE, oreLikeDrops(ModBlocks.DEEPSLATE_ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD));
+        addDrop(ModBlocks.NETHER_ZEPHORINE_ORE, oreLikeDrops(ModBlocks.NETHER_ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD));
+        addDrop(ModBlocks.END_STONE_ZEPHORINE_ORE, oreLikeDrops(ModBlocks.END_STONE_ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD));
 
     }
 
