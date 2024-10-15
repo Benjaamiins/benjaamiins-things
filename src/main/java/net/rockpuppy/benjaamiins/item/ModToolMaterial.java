@@ -10,20 +10,20 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    BEAN(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3000, 16.0F, 4.0F, 30, () -> Ingredient.ofItems(ModItems.BEAN));
+    BEAN(3000, 16, 4.0F, 30, 20,  () -> Ingredient.ofItems(ModItems.BEAN));
 
-    private final TagKey<Block> inverseTag;
+    private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterial(TagKey<Block> inverseTag, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
-        this.inverseTag = inverseTag;
+    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attckDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+        this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
-        this.attackDamage = attackDamage;
+        this.attackDamage = attckDamage;
         this.enchantability = enchantability;
         this.repairIngredient = repairIngredient;
     }
@@ -44,8 +44,8 @@ public enum ModToolMaterial implements ToolMaterial {
     }
 
     @Override
-    public TagKey<Block> getInverseTag() {
-        return this.inverseTag;
+    public int getMiningLevel() {
+        return this.miningLevel;
     }
 
     @Override

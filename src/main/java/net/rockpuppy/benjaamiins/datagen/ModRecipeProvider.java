@@ -2,18 +2,17 @@ package net.rockpuppy.benjaamiins.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.RegistryWrapper;
 import net.rockpuppy.benjaamiins.block.ModBlocks;
 import net.rockpuppy.benjaamiins.item.ModItems;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> BEAN_SMELTABLES = List.of(
@@ -21,12 +20,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public static final List<ItemConvertible> BENJAMINIUM_SMELTABLES = List.of(
             ModBlocks.BENJAMINIUM_ORE, ModBlocks.DEEPSLATE_BEAN_ORE, ModBlocks.NETHER_BENJAMINIUM_ORE, ModBlocks.END_STONE_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD);
 
-    public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
+    public ModRecipeProvider(FabricDataOutput output) {
+        super(output);
     }
 
     @Override
-    public void generate(RecipeExporter exporter) {
+    public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
         offerBlasting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
         offerSmelting(exporter, BENJAMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BENJAMINIUM_SHARD, 1.0F, 200, "bean");
@@ -57,10 +56,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerChestplateRecipe(exporter, ModItems.BEAN_CHESTPLATE, ModItems.BEAN);
         offerLeggingsRecipe(exporter, ModItems.BEAN_LEGGINGS, ModItems.BEAN);
         offerBootsRecipe(exporter, ModItems.BEAN_BOOTS, ModItems.BEAN);
-        offerHelmetRecipe(exporter, ModItems.BENJAMINIUM_HELMET, ModItems.BENJAMINIUM_SHARD);
-        offerChestplateRecipe(exporter, ModItems.BENJAMINIUM_CHESTPLATE, ModItems.BENJAMINIUM_SHARD);
-        offerLeggingsRecipe(exporter, ModItems.BENJAMINIUM_LEGGINGS, ModItems.BENJAMINIUM_SHARD);
-        offerBootsRecipe(exporter, ModItems.BENJAMINIUM_BOOTS, ModItems.BENJAMINIUM_SHARD);
 
         offerPickaxeRecipe(exporter, ModItems.BEAN_PICKAXE, ModItems.BEAN);
         offerSwordRecipe(exporter, ModItems.BEAN_SWORD, ModItems.BEAN);
@@ -83,7 +78,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void offerPickaxeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .input('*', Items.STICK)
@@ -93,7 +88,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerSwordRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .input('*', Items.STICK)
@@ -103,7 +98,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerAxeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .input('*', Items.STICK)
@@ -113,7 +108,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerShovelRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .input('*', Items.STICK)
@@ -123,7 +118,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerHoeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .input('*', Items.STICK)
@@ -133,7 +128,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerHelmetRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerHelmetRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .pattern("###")
@@ -141,7 +136,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerChestplateRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerChestplateRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .pattern("# #")
@@ -150,7 +145,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerLeggingsRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerLeggingsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .pattern("###")
@@ -159,7 +154,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(exporter);
     }
-    public static void offerBootsRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerBootsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .input('#', input)
                 .pattern("   ")

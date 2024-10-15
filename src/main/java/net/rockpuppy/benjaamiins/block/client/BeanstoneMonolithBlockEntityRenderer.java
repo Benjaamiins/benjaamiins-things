@@ -23,7 +23,7 @@ public class BeanstoneMonolithBlockEntityRenderer implements BlockEntityRenderer
     @Override
     public void render(BeanstoneMonolithBlockEntity entity, float f, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, int j) {
         long worldTime = entity.getWorld().getTime();
-        BeaconBlockEntityRenderer.renderBeam(matrixStack, vertexConsumerProvider, BEAM_TEXTURE, f, 1, worldTime, 0, 512, 0xff7400, 0.15F, 0.175F);
+        //BeaconBlockEntityRenderer.renderBeam(matrixStack, vertexConsumerProvider, BEAM_TEXTURE, f, 1, worldTime, 0, 512, 0, 0.15F, 0.175F);
     }
 
     @Override

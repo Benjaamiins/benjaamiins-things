@@ -1,72 +1,98 @@
 package net.rockpuppy.benjaamiins.item;
 
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Identifier;
-import net.rockpuppy.benjaamiins.Benjaamiins;
+import net.minecraft.util.Lazy;
+import net.minecraft.util.StringIdentifiable;
+import net.minecraft.util.Util;
 import net.rockpuppy.benjaamiins.block.ModBlocks;
 
-import java.util.List;
-import java.util.Map;
+import java.util.EnumMap;
 import java.util.function.Supplier;
 
-public class ModArmorMaterial {
-    public static final RegistryEntry<ArmorMaterial> BEAN = registerMaterial("bean", Map.of(
-            ArmorItem.Type.HELMET, 5,
-            ArmorItem.Type.CHESTPLATE, 10,
-            ArmorItem.Type.LEGGINGS, 8,
-            ArmorItem.Type.BOOTS, 5
-    ),
-    20,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
-            () -> Ingredient.ofItems(ModItems.BEAN),
-            4.0f,
-            0.2f,
-            false);
-    public static final RegistryEntry<ArmorMaterial> BENJAMINIUM = registerMaterial("benjaminium", Map.of(
-                    ArmorItem.Type.HELMET, 3,
-                    ArmorItem.Type.CHESTPLATE, 8,
-                    ArmorItem.Type.LEGGINGS, 6,
-                    ArmorItem.Type.BOOTS, 3
-            ),
-            20,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.ofItems(ModItems.BENJAMINIUM_SHARD),
-            3.0f,
-            0.1f,
-            false);
-    public static final RegistryEntry<ArmorMaterial> ELITE_BEAN = registerMaterial("elite_bean", Map.of(
-                    ArmorItem.Type.HELMET, 5,
-                    ArmorItem.Type.CHESTPLATE, 10,
-                    ArmorItem.Type.LEGGINGS, 8,
-                    ArmorItem.Type.BOOTS, 5
-            ),
-            20,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.ofItems(ModBlocks.BEAN_BLOCK),
-            4.0f,
-            0.2f,
-            false);
+public enum ModArmorMaterial implements ArmorMaterial{
 
 
+    BEAN("bean", 25, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 5);
+        map.put(ArmorItem.Type.LEGGINGS, 10);
+        map.put(ArmorItem.Type.CHESTPLATE, 8);
+        map.put(ArmorItem.Type.HELMET, 5);
+    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 0.2F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BEAN});
+    }),
+    ELITE_BEAN("elite_bean", 25, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 5);
+        map.put(ArmorItem.Type.LEGGINGS, 10);
+        map.put(ArmorItem.Type.CHESTPLATE, 8);
+        map.put(ArmorItem.Type.HELMET, 5);
+    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BEAN});
+    });
 
-    public static RegistryEntry<ArmorMaterial> registerMaterial(String id, Map<ArmorItem.Type, Integer> defensePoints, int enchantability, RegistryEntry<SoundEvent> equipSound, Supplier<Ingredient> repairIngredientSupplier, float toughness, float knockbackResistance, boolean dyeable) {
-        List<ArmorMaterial.Layer> layers = List.of(
-                new ArmorMaterial.Layer(Identifier.of(Benjaamiins.MOD_ID, id), "", dyeable)
-        );
+    public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
+    private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY = Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 13);
+        map.put(ArmorItem.Type.LEGGINGS, 15);
+        map.put(ArmorItem.Type.CHESTPLATE, 16);
+        map.put(ArmorItem.Type.HELMET, 11);
+    });
 
-        ArmorMaterial material = new ArmorMaterial(defensePoints, enchantability, equipSound, repairIngredientSupplier, layers, toughness, knockbackResistance);
+    private final String name;
+    private final int durabilityMultiplier;
+    private final EnumMap<ArmorItem.Type, Integer> protectionAmounts;
+    private final int enchantability;
+    private final SoundEvent equipSound;
+    private final float toughness;
+    private final float knockbackResistance;
+    private final Lazy<Ingredient> repairIngredientSupplier;
 
-        material = Registry.register(Registries.ARMOR_MATERIAL, Identifier.of(Benjaamiins.MOD_ID, id), material);
-
-        return RegistryEntry.of(material);
+    private ModArmorMaterial(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
+        this.name = name;
+        this.durabilityMultiplier = durabilityMultiplier;
+        this.protectionAmounts = protectionAmounts;
+        this.enchantability = enchantability;
+        this.equipSound = equipSound;
+        this.toughness = toughness;
+        this.knockbackResistance = knockbackResistance;
+        this.repairIngredientSupplier = new Lazy(repairIngredientSupplier);
     }
 
-    public static void initialize() {};
+    public int getDurability(ArmorItem.Type type) {
+        return (Integer)BASE_DURABILITY.get(type) * this.durabilityMultiplier;
+    }
+
+    public int getProtection(ArmorItem.Type type) {
+        return (Integer)this.protectionAmounts.get(type);
+    }
+
+    public int getEnchantability() {
+        return this.enchantability;
+    }
+
+    public SoundEvent getEquipSound() {
+        return this.equipSound;
+    }
+
+    public Ingredient getRepairIngredient() {
+        return (Ingredient)this.repairIngredientSupplier.get();
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public float getToughness() {
+        return this.toughness;
+    }
+
+    public float getKnockbackResistance() {
+        return this.knockbackResistance;
+    }
+
+    public String asString() {
+        return this.name;
+    }
 }

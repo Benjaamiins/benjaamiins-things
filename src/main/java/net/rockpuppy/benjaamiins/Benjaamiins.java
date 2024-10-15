@@ -40,12 +40,9 @@ public class Benjaamiins implements ModInitializer {
 		ModBlocks.initialize();
 		ModEntities.registerModEntities();
 
-		ModArmorMaterial.initialize();
-
 		ModWorldGeneration.generationModWorldGen();
 
 		ModBlockEntities.onInitialize();
-		ItemStorage.SIDED.registerForBlockEntity(BeanPedestalBlockEntity::getInventoryProvider, ModBlockEntities.BEAN_PEDESTAL);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_MASTER, BeanMasterEntity.createBeanMasterAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.BEAN_GOD, BeanGodEntity.createBeanGodAttributes());

@@ -26,17 +26,17 @@ public class BeanstoneMonolithBlock extends BlockWithEntity {
     private static final VoxelShape SHAPE = BeanPedestalBlock.createCuboidShape(2, 0, 2, 14, 26, 14);
 
     @Override
-    protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
 
     @Override
-    protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
 
     @Override
-    protected VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
+    public VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
         return SHAPE;
     }
 
