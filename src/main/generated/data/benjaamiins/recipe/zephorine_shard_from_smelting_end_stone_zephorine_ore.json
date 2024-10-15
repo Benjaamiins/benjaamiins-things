@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "bean",
+  "ingredient": {
+    "item": "benjaamiins:end_stone_zephorine_ore"
+  },
+  "result": {
+    "id": "benjaamiins:zephorine_shard"
+  }
+}
