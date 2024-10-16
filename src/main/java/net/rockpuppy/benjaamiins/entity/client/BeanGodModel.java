@@ -235,8 +235,8 @@ public class BeanGodModel<T extends BeanGodEntity> extends SinglePartEntityModel
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		bean_god.render(matrices, vertices, light, overlay, color);
+	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
+		bean_god.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
 
 	@Override

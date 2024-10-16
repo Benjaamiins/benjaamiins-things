@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "benjaamiins:bean_block",
+    "benjaamiins:bean_stairs",
+    "benjaamiins:bean_slab",
+    "benjaamiins:bean_bricks",
+    "benjaamiins:cracked_bean_bricks",
+    "benjaamiins:bean_brick_stairs",
+    "benjaamiins:bean_brick_slab",
+    "benjaamiins:bean_pillar",
+    "benjaamiins:cracked_bean_pillar",
+    "benjaamiins:deepslate_bean_ore",
+    "benjaamiins:bean_ore",
+    "benjaamiins:benjaminium_shard_block",
+    "benjaamiins:uncut_benjaminium_shard_block",
+    "benjaamiins:benjaminium_ore",
+    "benjaamiins:deepslate_benjaminium_ore",
+    "benjaamiins:nether_benjaminium_ore",
+    "benjaamiins:end_stone_benjaminium_ore",
+    "benjaamiins:bean_pedestal",
+    "benjaamiins:beanstone_monolith"
+  ]
+}

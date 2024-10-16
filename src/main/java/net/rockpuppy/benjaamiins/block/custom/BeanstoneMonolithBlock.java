@@ -9,6 +9,7 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -25,6 +26,8 @@ public class BeanstoneMonolithBlock extends BlockWithEntity {
 
     private static final VoxelShape SHAPE = BeanPedestalBlock.createCuboidShape(2, 0, 2, 14, 26, 14);
 
+    //public static final MapCodec<BeanstoneMonolithBlock> CODEC = BeanstoneMonolithBlock.createCodec(BeanstoneMonolithBlock::new);
+
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
@@ -39,11 +42,12 @@ public class BeanstoneMonolithBlock extends BlockWithEntity {
     public VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
         return SHAPE;
     }
-
+    /*
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return createCodec(BeanstoneMonolithBlock::new);
+        return CODEC;
     }
+    */
 
     @Override
     public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
@@ -56,7 +60,7 @@ public class BeanstoneMonolithBlock extends BlockWithEntity {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
 
             NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);

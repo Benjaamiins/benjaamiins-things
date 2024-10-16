@@ -99,11 +99,6 @@ public class BeanGodEntity extends HostileEntity {
         this.bossBar.removePlayer(player);
     }
 
-    @Override
-    public boolean canUsePortals(boolean allowVehicles) {
-        return false;
-    }
-
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {

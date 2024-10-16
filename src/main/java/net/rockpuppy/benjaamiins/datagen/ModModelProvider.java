@@ -62,17 +62,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BENJAMINIUM_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNCUT_BENJAMINIUM_SHARD, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BENJAMINIUM_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BENJAMINIUM_BOOTS, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.ELITE_BEAN_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELITE_BEAN_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELITE_BEAN_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELITE_BEAN_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BEAN_MASTER_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-        itemModelGenerator.register(ModItems.BEAN_GOD_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.BEAN_MASTER_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.BEAN_GOD_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "benjaamiins:block/end_stone_zephorine_ore"
-  }
-}

@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -28,14 +29,15 @@ public class BeanPedestalBlock extends BlockWithEntity implements BlockEntityPro
     }
 
     @Override
-    protected BlockRenderType getRenderType(BlockState state) {
+    public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
     }
-
+    /*
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return createCodec(BeanPedestalBlock::new);
     }
+     */
 
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
@@ -43,30 +45,32 @@ public class BeanPedestalBlock extends BlockWithEntity implements BlockEntityPro
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        /*
         if (!world.isClient){
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof BeanPedestalBlockEntity BeanPedestalBlockEntity) {
-
+            if (blockEntity instanceof BeanPedestalBlockEntity beanPedestalBlockEntity) {
                 ItemStack playerItem = player.getMainHandStack();
-                ItemStack pedestalItem = BeanPedestalBlockEntity.getBeanPedestalInventory().getStack(0);
+                DefaultedList<ItemStack> pedestalInventory = beanPedestalBlockEntity;
+                ItemStack pedestalItem = pedestalInventory.get(0);
 
-                if (!playerItem.isEmpty() && BeanPedestalBlockEntity.getBeanPedestalInventory().isEmpty()) {
-                    BeanPedestalBlockEntity.getBeanPedestalInventory().setStack(0, playerItem);
+                if (!playerItem.isEmpty() && pedestalItem.isEmpty()) {
+                    pedestalInventory.set(0, playerItem.copy());
                     player.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
-                } else if (playerItem.isEmpty() && !BeanPedestalBlockEntity.getBeanPedestalInventory().isEmpty()) {
-                    player.setStackInHand(Hand.MAIN_HAND, pedestalItem);
-                    BeanPedestalBlockEntity.getBeanPedestalInventory().setStack(0, ItemStack.EMPTY);
-                } else if (!playerItem.isEmpty() && !BeanPedestalBlockEntity.getBeanPedestalInventory().isEmpty()) {
-                    player.setStackInHand(Hand.MAIN_HAND, pedestalItem);
-                    BeanPedestalBlockEntity.getBeanPedestalInventory().setStack(0, playerItem);
+                } else if (playerItem.isEmpty() && !pedestalItem.isEmpty()) {
+                    player.setStackInHand(Hand.MAIN_HAND, pedestalItem.copy());
+                    pedestalInventory.set(0, ItemStack.EMPTY);
+                } else if (!playerItem.isEmpty() && !pedestalItem.isEmpty()) {
+                    player.setStackInHand(Hand.MAIN_HAND, pedestalItem.copy());
+                    pedestalInventory.set(0, playerItem.copy());
                 }
 
                 BeanPedestalBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
             }
         }
-
+         */
         return ActionResult.SUCCESS;
+
     }
 }

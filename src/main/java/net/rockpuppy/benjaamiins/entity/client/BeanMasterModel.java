@@ -68,8 +68,8 @@ public class BeanMasterModel<T extends BeanMasterEntity> extends SinglePartEntit
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		bean_master.render(matrices, vertices, light, overlay, color);
+	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
+		bean_master.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
 
 	@Override

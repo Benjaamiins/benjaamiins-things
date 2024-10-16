@@ -22,6 +22,7 @@ import java.util.function.Supplier;
 
 public class EliteBeanArmorItem extends ArmorItem implements GeoItem, GeoAnimatable {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+    private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
     public EliteBeanArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
@@ -62,6 +63,6 @@ public class EliteBeanArmorItem extends ArmorItem implements GeoItem, GeoAnimata
 
     @Override
     public Supplier<Object> getRenderProvider() {
-        return null;
+        return this.renderProvider;
     }
 }

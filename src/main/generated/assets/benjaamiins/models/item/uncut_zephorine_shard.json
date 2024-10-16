@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "benjaamiins:item/uncut_zephorine_shard"
-  }
-}

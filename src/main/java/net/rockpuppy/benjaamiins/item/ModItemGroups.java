@@ -56,11 +56,6 @@ public class ModItemGroups {
                     entries.add(ModBlocks.BENJAMINIUM_SHARD_BLOCK);
                     entries.add(ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
 
-                    entries.add(ModItems.BENJAMINIUM_HELMET);
-                    entries.add(ModItems.BENJAMINIUM_CHESTPLATE);
-                    entries.add(ModItems.BENJAMINIUM_LEGGINGS);
-                    entries.add(ModItems.BENJAMINIUM_BOOTS);
-
                     entries.add(ModItems.ELITE_BEAN_HELMET);
                     entries.add(ModItems.ELITE_BEAN_CHESTPLATE);
                     entries.add(ModItems.ELITE_BEAN_LEGGINGS);
