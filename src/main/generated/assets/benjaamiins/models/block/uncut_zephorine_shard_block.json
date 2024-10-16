@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "benjaamiins:block/uncut_zephorine_shard_block"
+  }
+}
