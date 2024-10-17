@@ -15,7 +15,7 @@ public class ModItemGroups {
             Identifier.of(Benjaamiins.MOD_ID, "benjaamiins_items"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.BEAN))
-                    .displayName(Text.translatable("itemGroup.benjaamiins.benjaamiins_things"))
+                    .displayName( Text.translatable("itemGroup.benjaamiins.benjaamiins_things"))
                     .entries((displayContext, entries) -> {
                     entries.add(ModItems.BEAN);
                     entries.add(ModItems.BEAN_PICKAXE);
