@@ -32,12 +32,6 @@ public class BeanPedestalBlock extends BlockWithEntity implements BlockEntityPro
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
     }
-    /*
-    @Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return createCodec(BeanPedestalBlock::new);
-    }
-     */
 
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
@@ -46,30 +40,30 @@ public class BeanPedestalBlock extends BlockWithEntity implements BlockEntityPro
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        /*
         if (!world.isClient){
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof BeanPedestalBlockEntity beanPedestalBlockEntity) {
+
+            if (blockEntity instanceof BeanPedestalBlockEntity) {
+                BeanPedestalBlockEntity BeanPedestalBlockEntity = (BeanPedestalBlockEntity) blockEntity;
+                ItemStack pedestalItem = BeanPedestalBlockEntity.getStack(0);
                 ItemStack playerItem = player.getMainHandStack();
-                DefaultedList<ItemStack> pedestalInventory = beanPedestalBlockEntity;
-                ItemStack pedestalItem = pedestalInventory.get(0);
 
                 if (!playerItem.isEmpty() && pedestalItem.isEmpty()) {
-                    pedestalInventory.set(0, playerItem.copy());
+                    BeanPedestalBlockEntity.setStack(0, playerItem.copy());
                     player.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
                 } else if (playerItem.isEmpty() && !pedestalItem.isEmpty()) {
                     player.setStackInHand(Hand.MAIN_HAND, pedestalItem.copy());
-                    pedestalInventory.set(0, ItemStack.EMPTY);
+                    BeanPedestalBlockEntity.setStack(0, ItemStack.EMPTY);
                 } else if (!playerItem.isEmpty() && !pedestalItem.isEmpty()) {
                     player.setStackInHand(Hand.MAIN_HAND, pedestalItem.copy());
-                    pedestalInventory.set(0, playerItem.copy());
+                    BeanPedestalBlockEntity.setStack(0, playerItem.copy());
                 }
+
 
                 BeanPedestalBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
             }
         }
-         */
         return ActionResult.SUCCESS;
 
     }

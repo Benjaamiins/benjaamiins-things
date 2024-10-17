@@ -10,7 +10,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    BEAN(3000, 16, 4.0F, 30, 20,  () -> Ingredient.ofItems(ModItems.BEAN));
+    BEAN(4, 2000, 5.5F, 1.5f, 20,  () -> Ingredient.ofItems(ModItems.BEAN));
 
     private final int miningLevel;
     private final int itemDurability;

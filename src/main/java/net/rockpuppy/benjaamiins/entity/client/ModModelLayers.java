@@ -8,6 +8,6 @@ public class ModModelLayers {
     public static final EntityModelLayer BEAN_MASTER =
             new EntityModelLayer(Identifier.of(Benjaamiins.MOD_ID, "bean_master"), "main");
 
-    public static final EntityModelLayer BEAN_GOD =
-            new EntityModelLayer(Identifier.of(Benjaamiins.MOD_ID, "bean_god"), "main");
+    public static final EntityModelLayer BEAN_LORD =
+            new EntityModelLayer(Identifier.of(Benjaamiins.MOD_ID, "bean_lord"), "main");
 }

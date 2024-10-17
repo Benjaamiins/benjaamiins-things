@@ -17,8 +17,8 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> BEAN_SMELTABLES = List.of(
             ModBlocks.BEAN_ORE, ModBlocks.DEEPSLATE_BEAN_ORE);
-    public static final List<ItemConvertible> BENJAMINIUM_SMELTABLES = List.of(
-            ModBlocks.BENJAMINIUM_ORE, ModBlocks.DEEPSLATE_BEAN_ORE, ModBlocks.NETHER_BENJAMINIUM_ORE, ModBlocks.END_STONE_BENJAMINIUM_ORE, ModItems.UNCUT_BENJAMINIUM_SHARD);
+    public static final List<ItemConvertible> ZEPHORINE_SMELTABLES = List.of(
+            ModBlocks.ZEPHORINE_ORE, ModBlocks.DEEPSLATE_ZEPHORINE_ORE, ModBlocks.NETHER_ZEPHORINE_ORE, ModBlocks.END_STONE_ZEPHORINE_ORE, ModItems.UNCUT_ZEPHORINE_SHARD);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -28,16 +28,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
         offerBlasting(exporter, BEAN_SMELTABLES, RecipeCategory.MISC, ModItems.BEAN, 1.0F, 200, "bean");
-        offerSmelting(exporter, BENJAMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BENJAMINIUM_SHARD, 1.0F, 200, "bean");
-        offerBlasting(exporter, BENJAMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.BENJAMINIUM_SHARD, 1.0F, 200, "bean");
+        offerSmelting(exporter, ZEPHORINE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHORINE_SHARD, 1.0F, 200, "bean");
+        offerBlasting(exporter, ZEPHORINE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHORINE_SHARD, 1.0F, 200, "bean");
         offerSmelting(exporter, List.of(ModBlocks.BEAN_BRICKS), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_BRICKS, 1.0F, 200, "bean");
         offerBlasting(exporter, List.of(ModBlocks.BEAN_BRICKS), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_BRICKS, 1.0F, 200, "bean");
         offerSmelting(exporter, List.of(ModBlocks.BEAN_PILLAR), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_PILLAR, 1.0F, 200, "bean");
         offerBlasting(exporter, List.of(ModBlocks.BEAN_PILLAR), RecipeCategory.MISC, ModBlocks.CRACKED_BEAN_PILLAR, 1.0F, 200, "bean");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BEAN, RecipeCategory.DECORATIONS, ModBlocks.BEAN_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BENJAMINIUM_SHARD, RecipeCategory.DECORATIONS, ModBlocks.BENJAMINIUM_SHARD_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.UNCUT_BENJAMINIUM_SHARD, RecipeCategory.DECORATIONS, ModBlocks.UNCUT_BENJAMINIUM_SHARD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ZEPHORINE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.ZEPHORINE_SHARD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.UNCUT_ZEPHORINE_SHARD, RecipeCategory.DECORATIONS, ModBlocks.UNCUT_ZEPHORINE_SHARD_BLOCK);
 
         createStairsRecipe(ModBlocks.BEAN_STAIRS, Ingredient.ofItems(ModBlocks.BEAN_BLOCK))
                 .criterion(hasItem(ModBlocks.BEAN_BLOCK), conditionsFromItem(ModBlocks.BEAN_BLOCK))

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zephorine_shard_from_blasting_zephorine_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephorine_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "benjaamiins:zephorine_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zephorine_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zephorine_shard_from_blasting_zephorine_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

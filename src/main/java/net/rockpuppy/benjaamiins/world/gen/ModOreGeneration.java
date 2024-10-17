@@ -10,10 +10,10 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BEAN_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BENJAMINIUM_ORE_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ZEPHORINE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_BENJAMINIUM_ORE_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_ZEPHORINE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_BENJAMINIUM_ORE_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_ZEPHORINE_ORE_PLACED_KEY);
     }
 }

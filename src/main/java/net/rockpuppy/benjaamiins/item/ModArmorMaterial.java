@@ -7,7 +7,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
-import net.rockpuppy.benjaamiins.block.ModBlocks;
+import net.rockpuppy.benjaamiins.Benjaamiins;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
@@ -16,20 +16,20 @@ public enum ModArmorMaterial implements ArmorMaterial{
 
 
     BEAN("bean", 25, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 5);
-        map.put(ArmorItem.Type.LEGGINGS, 10);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 5);
-    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 0.2F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BEAN});
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.CHESTPLATE, 6);
+        map.put(ArmorItem.Type.LEGGINGS, 5);
+        map.put(ArmorItem.Type.HELMET, 2);
+    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(ModItems.BEAN);
     }),
-    ELITE_BEAN("elite_bean", 25, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 5);
-        map.put(ArmorItem.Type.LEGGINGS, 10);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 5);
-    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BEAN});
+    ELITE_BEAN("elite_bean", 150, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        map.put(ArmorItem.Type.BOOTS, 4);
+        map.put(ArmorItem.Type.CHESTPLATE, 9);
+        map.put(ArmorItem.Type.LEGGINGS, 7);
+        map.put(ArmorItem.Type.HELMET, 4);
+    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.4F, () -> {
+        return Ingredient.ofItems(ModItems.BEAN);
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
@@ -81,7 +81,7 @@ public enum ModArmorMaterial implements ArmorMaterial{
     }
 
     public String getName() {
-        return this.name;
+        return Benjaamiins.MOD_ID + ":" + name;
     }
 
     public float getToughness() {

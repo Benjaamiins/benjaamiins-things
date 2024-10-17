@@ -15,11 +15,11 @@ public class ModItems {
 
     public static final Item BEAN = register("bean", new Item(new Item.Settings().food(bean)));
 
-    public static final Item BEAN_PICKAXE = register("bean_pickaxe", new PickaxeItem(ModToolMaterial.BEAN, 2, 2.6f, new Item.Settings()));
-    public static final Item BEAN_SWORD = register("bean_sword", new SwordItem(ModToolMaterial.BEAN, 11, 1.5f, new Item.Settings()));
-    public static final Item BEAN_AXE = register("bean_axe", new AxeItem(ModToolMaterial.BEAN, 13, 2.6f, new Item.Settings()));
-    public static final Item BEAN_SHOVEL = register("bean_shovel", new ShovelItem(ModToolMaterial.BEAN, 2, 3f, new Item.Settings()));
-    public static final Item BEAN_HOE = register("bean_hoe", new HoeItem(ModToolMaterial.BEAN, 3, 1f, new Item.Settings()));
+    public static final Item BEAN_PICKAXE = register("bean_pickaxe", new PickaxeItem(ModToolMaterial.BEAN, 2, -2.8f, new Item.Settings()));
+    public static final Item BEAN_SWORD = register("bean_sword", new SwordItem(ModToolMaterial.BEAN, 4, -2.4f, new Item.Settings()));
+    public static final Item BEAN_AXE = register("bean_axe", new AxeItem(ModToolMaterial.BEAN, 7, -3.0f, new Item.Settings()));
+    public static final Item BEAN_SHOVEL = register("bean_shovel", new ShovelItem(ModToolMaterial.BEAN, 2.5f, -3.0f, new Item.Settings()));
+    public static final Item BEAN_HOE = register("bean_hoe", new HoeItem(ModToolMaterial.BEAN, -1, -1.0f, new Item.Settings()));
 
     public static final Item BEAN_HELMET = register("bean_helmet",
             new ArmorItem(ModArmorMaterial.BEAN, ArmorItem.Type.HELMET, new Item.Settings()));
@@ -40,9 +40,9 @@ public class ModItems {
             new EliteBeanArmorItem(ModArmorMaterial.ELITE_BEAN, ArmorItem.Type.BOOTS, new Item.Settings()));
 
     public static final Item BEAN_MASTER_SPAWN_EGG = register("bean_master_spawn_egg", new SpawnEggItem(ModEntities.BEAN_MASTER, 0xff9c00, 0xff7400, new Item.Settings()));
-    public static final Item BEAN_GOD_SPAWN_EGG = register("bean_god_spawn_egg", new SpawnEggItem(ModEntities.BEAN_GOD, 0xff7400, 0xff9c00, new Item.Settings()));
-    public static final Item BENJAMINIUM_SHARD = register("benjaminium_shard", new Item(new Item.Settings()));
-    public static final Item UNCUT_BENJAMINIUM_SHARD = register("uncut_benjaminium_shard", new Item(new Item.Settings()));
+    public static final Item BEAN_LORD_SPAWN_EGG = register("bean_lord_spawn_egg", new SpawnEggItem(ModEntities.BEAN_LORD, 0xff7400, 0xff9c00, new Item.Settings()));
+    public static final Item ZEPHORINE_SHARD = register("zephorine_shard", new Item(new Item.Settings()));
+    public static final Item UNCUT_ZEPHORINE_SHARD = register("uncut_zephorine_shard", new Item(new Item.Settings()));
     public static final Item VALIDUS_BEANORUM = register("validus_beanorum", new Item(new Item.Settings()));
 
     public static Item register(String id, Item item) {

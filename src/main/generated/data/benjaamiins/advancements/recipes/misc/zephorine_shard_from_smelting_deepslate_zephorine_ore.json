@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_zephorine_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "benjaamiins:deepslate_zephorine_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zephorine_shard_from_smelting_deepslate_zephorine_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_zephorine_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zephorine_shard_from_smelting_deepslate_zephorine_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

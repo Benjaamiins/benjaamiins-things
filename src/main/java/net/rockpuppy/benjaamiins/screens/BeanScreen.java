@@ -37,7 +37,6 @@ public class BeanScreen extends HandledScreen<BeanstoneMonolithScreenHandler> {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        //renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
         drawMouseoverTooltip(context, mouseX, mouseY);
 
@@ -80,7 +79,6 @@ public class BeanScreen extends HandledScreen<BeanstoneMonolithScreenHandler> {
                     if (currentPage < totalPages) {
                         currentPage++;
                     }
-                    System.out.println("Current Page: " + currentPage);
                 })
                 .dimensions((width / 2 + (bgWidth / 2)) - 80, (height / 2 + (bgHeight / 2)) - 30, 60, 20)
                 .build();
@@ -88,7 +86,6 @@ public class BeanScreen extends HandledScreen<BeanstoneMonolithScreenHandler> {
                     if (currentPage > 1) {
                         currentPage--;
                     }
-                    System.out.println("Current Page: " + currentPage);
                 })
                 .dimensions((width / 2 - (bgWidth / 2)) + 20, (height / 2 + (bgHeight / 2)) - 30, 60, 20)
                 .build();
