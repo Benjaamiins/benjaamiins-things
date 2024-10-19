@@ -67,7 +67,7 @@ public class BeanLordEntity extends HostileEntity {
 
     public static DefaultAttributeContainer.Builder createBeanGodAttributes() {
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 2000)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 350)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2F)
                 .add(EntityAttributes.GENERIC_ARMOR, 35.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 35)

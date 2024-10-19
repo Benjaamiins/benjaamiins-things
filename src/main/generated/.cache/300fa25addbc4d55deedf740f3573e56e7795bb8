@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-17T22:47:35.0579597	benjaamiins/Model Definitions
+// 1.20.1	2024-10-19T09:55:29.6025881	benjaamiins/Model Definitions
 8e579f901169b31837bf12f349a0296d527a0dd4 assets\benjaamiins\models\block\cracked_bean_pillar.json
 42d13e94418dfbea52a4e019d2ef65e2f9cf982c assets\benjaamiins\models\item\bean_sword.json
 88f85e61147b2c2bc7a4397f0e5f1d7d171245dc assets\benjaamiins\blockstates\deepslate_zephorine_ore.json
@@ -16,8 +16,8 @@ f9fe3b7ed32693c11e7d017817a4598840d24ce6 assets\benjaamiins\models\block\end_sto
 a583be8de1d7701d93964a17f3c515e5208e1076 assets\benjaamiins\models\block\zephorine_ore.json
 6953bb4fb46cd4ae60495d29d3787ca1bbc094f6 assets\benjaamiins\models\item\bean_leggings.json
 f849d39406ba87d37d62bfaf5e1b809b5f69ecee assets\benjaamiins\blockstates\deepslate_bean_ore.json
-a4ff4494535b46b883e1c4fbe6b379e25ad01dd6 assets\benjaamiins\models\item\cracked_bean_pillar.json
 7695ba5c206588411e96ca814072961fff9d400a assets\benjaamiins\models\item\bean_helmet.json
+a4ff4494535b46b883e1c4fbe6b379e25ad01dd6 assets\benjaamiins\models\item\cracked_bean_pillar.json
 e29e9f7c99e74eb2e44852481a34a8430e1f16c9 assets\benjaamiins\blockstates\uncut_zephorine_shard_block.json
 ef05c10e5935944280f5b081ec3723342d18d37f assets\benjaamiins\models\item\bean_chestplate.json
 bd16fa3454830d99b50725f3ae28355778df6cfe assets\benjaamiins\blockstates\end_stone_zephorine_ore.json
@@ -37,8 +37,8 @@ f3efaf1dedd8bea0e2bce71ee97a7b06e4a54f7b assets\benjaamiins\models\item\bean.jso
 8ed9ce3b7982462ffe18d44a59c03bb30c342b0b assets\benjaamiins\models\item\cracked_bean_bricks.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\benjaamiins\models\item\bean_master_spawn_egg.json
 7de444ce6e580bf10078426bd8fa7ad8a33873fb assets\benjaamiins\blockstates\beanstone_monolith.json
-fed634582c42a388f85fdb588afefd4af7490b37 assets\benjaamiins\blockstates\bean_bricks.json
 a2fe835de7ef5ddf35ea2a0536e25b8dfa995df4 assets\benjaamiins\blockstates\bean_block.json
+fed634582c42a388f85fdb588afefd4af7490b37 assets\benjaamiins\blockstates\bean_bricks.json
 fe8e9f49fce29ebc5322b98b11cc9b497b038104 assets\benjaamiins\models\item\bean_brick_slab.json
 988c21929e053a4197dd753e0a9a32106e2f4d70 assets\benjaamiins\models\item\uncut_zephorine_shard_block.json
 e99c1c8fa5a306944e405d7f8b577c824a9e65c9 assets\benjaamiins\models\block\cracked_bean_bricks.json

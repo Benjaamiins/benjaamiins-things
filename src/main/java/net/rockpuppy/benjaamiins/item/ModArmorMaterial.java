@@ -24,8 +24,8 @@ public enum ModArmorMaterial implements ArmorMaterial{
         return Ingredient.ofItems(ModItems.BEAN);
     }),
     ELITE_BEAN("elite_bean", 150, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 4);
-        map.put(ArmorItem.Type.CHESTPLATE, 9);
+        map.put(ArmorItem.Type.BOOTS, 3);
+        map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.LEGGINGS, 7);
         map.put(ArmorItem.Type.HELMET, 4);
     }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.4F, () -> {
